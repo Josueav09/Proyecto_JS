@@ -29,25 +29,39 @@ function App() {
       title: 'Aprendizaje Automático',
       description: 'Descubre cómo las máquinas aprenden a partir de datos.',
       details: 'El aprendizaje automático utiliza algoritmos para predecir y analizar.',
-      images: ['/imagenes/iimg15.jpg', '/imagenes/img14.jpg', '/imagenes/img17.jpg'],
+      images: [
+        process.env.PUBLIC_URL + '/imagenes/iimg15.jpg',
+        process.env.PUBLIC_URL + '/imagenes/img14.jpg',
+        process.env.PUBLIC_URL + '/imagenes/img17.jpg'
+      ],
     },
     {
       title: 'Procesamiento de Lenguaje Natural',
       description: 'Explora cómo las máquinas entienden lenguaje humano.',
       details: 'El PLN habilita tareas como análisis de sentimientos y traducción automática.',
-      images: ['/imagenes/img13.jpg', '/imagenes/img8.jpg'],
+      images: [
+        process.env.PUBLIC_URL + '/imagenes/img13.jpg',
+        process.env.PUBLIC_URL + '/imagenes/img8.jpg'
+      ],
     },
     {
       title: 'Visión por Computadora',
       description: 'Aprende cómo las máquinas analizan imágenes y videos para reconocer objetos, rostros y más.',
       details: 'La visión por computadora permite a las máquinas analizar contenido visual para identificar patrones, objetos y realizar tareas como detección de rostros y análisis de imágenes médicas.',
-      images: ['/imagenes/img10.jpg', '/imagenes/img9.jpg', '/imagenes/img2.jpg'],
+      images: [
+        process.env.PUBLIC_URL + '/imagenes/img10.jpg',
+        process.env.PUBLIC_URL + '/imagenes/img9.jpg',
+        process.env.PUBLIC_URL + '/imagenes/img2.jpg'
+      ],
     },
     {
       title: 'Redes Neuronales',
       description: 'Conoce los fundamentos de las redes neuronales y su impacto en el avance de la inteligencia artificial.',
       details: 'Las redes neuronales son modelos inspirados en el cerebro humano, compuestos por capas que procesan información para resolver problemas complejos.',
-      images: ['/imagenes/img7.jpg', '/imagenes/img2.jpg'],
+      images: [
+        process.env.PUBLIC_URL + '/imagenes/img7.jpg',
+        process.env.PUBLIC_URL + '/imagenes/img2.jpg'
+      ],
     },
   ];
 
@@ -213,10 +227,10 @@ function App() {
       <div className="gallery-section" id="galeria">
         <h2>Galería de Imágenes</h2>
         <div className="gallery-grid">
-          <img src="/imagenes/img1.jpg" alt="Imagen 1" />
-          <img src="/imagenes/img2.jpg" alt="Imagen 2" />
-          <img src="/imagenes/img3.jpg" alt="Imagen 3" />
-          <img src="/imagenes/img5.jpg" alt="Imagen 4" />
+        <img src={process.env.PUBLIC_URL + "/imagenes/img1.jpg"} alt="Imagen 1" />
+          <img src={process.env.PUBLIC_URL + "/imagenes/img2.jpg"} alt="Imagen 2" />
+          <img src={process.env.PUBLIC_URL + "/imagenes/img3.jpg"} alt="Imagen 3" />
+          <img src={process.env.PUBLIC_URL + "/imagenes/img5.jpg"} alt="Imagen 4" />
         </div>
       </div>
 
